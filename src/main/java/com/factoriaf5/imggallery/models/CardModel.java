@@ -39,5 +39,13 @@ public class CardModel {
         this.img = img;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
 
 }

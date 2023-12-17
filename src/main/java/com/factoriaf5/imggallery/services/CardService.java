@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.factoriaf5.imggallery.models.CardModel;
 import com.factoriaf5.imggallery.repositories.ICardRepository;
-import com.google.common.base.Optional;
+// import com.google.common.base.Optional;
 
 @Service
 public class CardService {
@@ -24,7 +24,7 @@ public class CardService {
             return cardRepository.save(card);
     }
 
-    // obtener una sola img
+    // metodo get de una sola img
     public java.util.Optional<CardModel> getCardById(Long id){
         // optional permite que este método pueda devolver algo, o bien ser null
         return cardRepository.findById(id);

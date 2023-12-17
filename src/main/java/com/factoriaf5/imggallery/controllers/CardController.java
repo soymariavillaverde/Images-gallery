@@ -1,21 +1,20 @@
 package com.factoriaf5.imggallery.controllers;
 
-import com.factoriaf5.imggallery.services.CardService;
-import com.factoriaf5.imggallery.models.CardModel;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+// import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.factoriaf5.imggallery.models.CardModel;
+import com.factoriaf5.imggallery.services.CardService;
 
 
 
@@ -26,7 +25,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class CardController {
     // aquí voy a definir las peticiones HTTP y las rutas
 
-    // @GetMapping("/getImages")
     @Autowired
     private CardService cardService;
 
@@ -49,8 +47,8 @@ public class CardController {
     public CardModel updateCardById(@RequestBody CardModel request, @PathVariable("id") Long id){
         return this.cardService.updateCardById(request, id);
     }
-
-    @DeleteMapping(path = "/{id}")
+    
+    /*     @DeleteMapping(path = "/{id}")
     public String CardModel deleteCardById(@PathVariable("id") Long id){
         boolean ok = this.cardService.deleteImg(id);
 
@@ -59,6 +57,5 @@ public class CardController {
         } else {
             return "Oooops, something went wrong and your image with id " + id + " was not deleted";
         }
-    }
+    } */
 }
-`
