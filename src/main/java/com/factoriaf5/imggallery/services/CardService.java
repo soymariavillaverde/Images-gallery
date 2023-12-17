@@ -32,8 +32,8 @@ public class CardService {
 
 
     // método put
-    public CardModel updateCardById(CardModel request, Long id){
-        CardModel card = cardRepository.findById(id).get();
+    public CardModel updateCardById(CardModel request){
+        CardModel card = cardRepository.findById(request.getId()).get();
 
         card.setName(request.getName());
         card.setImg(request.getImg());
