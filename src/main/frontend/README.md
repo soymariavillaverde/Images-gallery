@@ -1,35 +1,73 @@
-# img-gallery
+# My favorite images gallery
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación para subir y visualizar mis imágenes favoritas
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Requisitos:
+- Como usuario será necesario poder ver una lista de mis imágenes (imagen y un título)
+- Como usuario será necesario poder añadir imágenes a una base de datos
+- Como usuario será necesario poder eliminar una imágen
+- Como usuario será necesario poder editar una imagen existente
 
-## Customize configuration
+# Herramientas utilizadas:
+- HTML5
+- SASS (SCSS)
+- JS
+- VUE3
+- Vuetify
+- Vite
+- Pinia
+- Java
+- Maven
+- SpringBoot
+- Postman
+- Postgres
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+
+## Como configurar el proyecto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+# En frontend
+
+Para acceder a la parte de frontend sigue estos comandos:
+
+```sh
+cd src/main/frontend
+```
+
+Para ver el proyecto en servidor utiliza el siguiente comando:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar para producción
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+# En backend
+
+  ```sh
+mvn clean package
+```
+Para compilar el proyecto utiliza el siguiente comando:
 
 ```sh
-npm run test:unit
+mvn compile
 ```
+
+Para lanzar el servidor con Springbot utiliza el siguiente comando:
+
+```sh
+mvn spring-boot:run
+```
+
+ ### Autora
+- Mari1a Villaverde https://github.com/soymariavillaverde
+
