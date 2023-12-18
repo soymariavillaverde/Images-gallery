@@ -7,12 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.factoriaf5.imggallery.models.CardModel;
 import com.factoriaf5.imggallery.repositories.ICardRepository;
-// import com.google.common.base.Optional;
 
 @Service
 public class CardService {
  
-    // esto sirve para inyección de dependencias
     @Autowired
     ICardRepository cardRepository;
 
@@ -24,14 +22,10 @@ public class CardService {
             return cardRepository.save(card);
     }
 
-    // metodo get de una sola img
     public java.util.Optional<CardModel> getCardById(Long id){
-        // optional permite que este método pueda devolver algo, o bien ser null
         return cardRepository.findById(id);
     }
 
-
-    // método put
     public CardModel updateCardById(CardModel request){
         CardModel card = cardRepository.findById(request.getId()).get();
 
@@ -40,7 +34,6 @@ public class CardService {
         return card;
     }
 
-    // método delete
     public Boolean deleteImg (Long id){
         try{
             cardRepository.deleteById(id);

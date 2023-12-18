@@ -7,6 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ICardRepository extends JpaRepository<CardModel, Long> {
-    // me permitirá hacer consultas a una BBDD
     
 }

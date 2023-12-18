@@ -10,7 +10,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table (name = "images")
 public class CardModel {
-    // Todos los campos que ponga aquí serán una columna en la BBDD 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +20,6 @@ public class CardModel {
     @Column
     private String img;
 
-
     public String getName() {
         return name;
     }
@@ -29,7 +27,6 @@ public class CardModel {
     public void setName(String name) {
         this.name = name;
     }
-
 
     public String getImg() {
         return img;

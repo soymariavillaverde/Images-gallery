@@ -23,16 +23,14 @@ import com.factoriaf5.imggallery.services.CardService;
 @RequestMapping("/images")
 
 public class CardController {
-    // aquí voy a definir las peticiones HTTP y las rutas
 
     @Autowired
     private CardService cardService;
 
-    // este tiene que devolver la vista home
     @GetMapping
     public ArrayList<CardModel> getCards(){
         ArrayList<CardModel> text= new ArrayList<CardModel>();
-        return text; // this.cardService.getImages();
+        return text;
     }
 
     @PostMapping(path = "/add")
